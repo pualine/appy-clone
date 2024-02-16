@@ -1,0 +1,15 @@
+
+.todoList{
+    background-color:rgb(234, 245, 245);
+   border-radius: 5px;
+   height: 80vh;
+   width: 70%;
+   position: absolute;
+   left: 220px;
+}
+
+.list{
+    font-size: 18px;
+    font-weight: 300px;
+    /* padding-left: 10px; */
+}
