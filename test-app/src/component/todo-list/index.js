@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
 
-
-
 function TodoList() {
     // let todoTask =[];
     const [todoTask, setTodoTask] = React.useEffect([]);
