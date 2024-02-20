@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 
 function TodoList() {
     // let todoTask =[];
-    const [todoTask, setTodoTask] = React.useEffect([]);
+    const [todoTask, setTodoTask] = React.useState([]);
 
     function getTodoList() {
         // Get all items from localstorage and store it

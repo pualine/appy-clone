@@ -16,13 +16,13 @@ function AddTodo() {
     // save todo -on button
     function SaveTodo(){
         // Get existing list of items - todos from localStorage
-        let todoTask = localStorage.getItem("TODO") || [];
+        let todoTask = JSON.parse(localStorage.getItem("TODO")) || [];
 
         // Add new items to exsting items
         todoTask.push(todo);
 
         // store all items in localstore
-        localStorage.setItem("TODO", JSON.stringify(todo));
+        localStorage.setItem("TODO", JSON.stringify(todoTask));
 
     }
 
@@ -37,7 +37,7 @@ function AddTodo() {
                 placeholder="Enter your task.."
                 className={styles.addTodoInput} />
             <button
-            onChange={SaveTodo}
+            onClick={SaveTodo}
                 className={styles.addTodoButton}>Add Task</button>
         </section>
 
