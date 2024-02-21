@@ -1,5 +1,8 @@
 import React from "react";
 import styles from "./index.module.css";
+import {useLocalStorage} from "usehooks-ts";
+
+
 
 function TodoList() {
     // let todoTask =[];
@@ -7,7 +10,7 @@ function TodoList() {
 
     function getTodoList() {
         // Get all items from localstorage and store it
-       let  SaveTodoTask = JSON.parse(localStorage.getItem("TODO")) || [];
+       let  SaveTodoTask = JSON.parse(useLocalStorage.getItem("TODO")) || [];
        setTodoTask(SaveTodoTask);
     }
     
